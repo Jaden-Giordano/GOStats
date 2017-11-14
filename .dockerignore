@@ -1,0 +1,14 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Code standard
+.editorconfig
+coverage/
+.nyc_output/
+.eslintrc.json
+test/
+
+# Git
+.git/
+.gitignore
