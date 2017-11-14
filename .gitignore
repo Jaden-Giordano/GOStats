@@ -107,6 +107,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Istanbul
+.nyc_output/
+
 # Others
 lib/
 data/
