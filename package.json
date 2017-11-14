@@ -1,49 +1,54 @@
 {
-  "name": "go-stats",
-  "description": "CSGO Match-by=Match statistics",
-  "version": "0.0.0",
-  "homepage": "",
-  "main": "src",
-  "keywords": [
-    "feathers"
-  ],
-  "author": {
-    "name": "Navomi-Jaden",
-    "email": "jaden.giordano@navomi.com"
-  },
-  "contributors": [],
-  "bugs": {},
-  "directories": {
-    "lib": "src",
-    "test": "test/"
-  },
-  "engines": {
-    "node": ">= 6.0.0",
-    "yarn": ">= 0.18.0"
-  },
-  "scripts": {
-    "test": "yarn run eslint && yarn run mocha",
-    "eslint-nofix": "eslint src/. test/. --config .eslintrc.json",
-	"eslint": "eslint src/. test/. --config .eslintrc.json --fix",
-    "start": "node src/",
-    "mocha": "mocha test/ --recursive --exit"
-  },
-  "dependencies": {
-    "@feathersjs/configuration": "^1.0.0",
-    "@feathersjs/errors": "^3.0.0",
-    "@feathersjs/express": "^1.1.1",
-    "@feathersjs/feathers": "^3.0.0",
-    "@feathersjs/socketio": "^3.0.0",
-    "compression": "^1.7.1",
-    "cors": "^2.8.4",
-    "helmet": "^3.9.0",
-    "serve-favicon": "^2.4.5",
-    "winston": "^2.4.0"
-  },
-  "devDependencies": {
-    "eslint": "^4.11.0",
-    "mocha": "^4.0.1",
-    "request": "^2.83.0",
-    "request-promise": "^4.2.2"
-  }
+	"name": "go-stats",
+	"description": "CSGO Match-by=Match statistics",
+	"version": "0.0.0",
+	"homepage": "",
+	"main": "src",
+	"keywords": [
+		"feathers",
+		"csgo",
+		"statistics"
+	],
+	"author": {
+		"name": "Jaden Giordano",
+		"email": "jaden@forester.io"
+	},
+	"contributors": [],
+	"bugs": {},
+	"directories": {
+		"lib": "src",
+		"test": "test/"
+	},
+	"engines": {
+		"node": ">= 8.9.0",
+		"yarn": ">= 1.3.0"
+	},
+	"scripts": {
+		"test": "yarn eslint && yarn mocha && yarn nyc && codecov",
+		"eslint-nofix": "eslint src/. test/. --config .eslintrc.json",
+		"eslint": "eslint src/. test/. --config .eslintrc.json --fix",
+		"mocha": "mocha test/ --recursive --exit",
+		"nyc": "nyc --reporter=lcovonly yarn mocha",
+		"start": "node src/"
+	},
+	"dependencies": {
+		"@feathersjs/configuration": "^1.0.0",
+		"@feathersjs/errors": "^3.0.0",
+		"@feathersjs/express": "^1.1.1",
+		"@feathersjs/feathers": "^3.0.0",
+		"@feathersjs/socketio": "^3.0.0",
+		"compression": "^1.7.1",
+		"cors": "^2.8.4",
+		"helmet": "^3.9.0",
+		"serve-favicon": "^2.4.5",
+		"winston": "^2.4.0"
+	},
+	"devDependencies": {
+		"codecov": "^3.0.0",
+		"eslint": "^4.11.0",
+		"mocha": "^4.0.1",
+		"nyc": "^11.3.0",
+		"request": "^2.83.0",
+		"request-promise": "^4.2.2"
+	}
 }

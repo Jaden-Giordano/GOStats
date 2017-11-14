@@ -1,6 +1,9 @@
-# go-stats
+# GOStats
 
 > CSGO Match-by=Match statistics
+
+[![CircleCI](https://img.shields.io/circleci/project/github/Jaden-Giordano/GOStats.svg?style=for-the-badge)](https://circleci.com/gh/Jaden-Giordano/GOStats/tree/master)
+[![Codecov](https://img.shields.io/codecov/c/github/Jaden-Giordano/GOStats.svg?style=for-the-badge)](https://codecov.io/gh/Jaden-Giordano/GOStats)
 
 ## About
 
@@ -46,9 +49,9 @@ For more information on all the things you can do with Feathers visit [docs.feat
 
 ## Changelog
 
-__0.1.0__
+__UNRELEASED__
 
-- Initial release
+- Initial release 	
 
 ## License
 
